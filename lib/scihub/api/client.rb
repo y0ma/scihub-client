@@ -25,8 +25,9 @@ module SciHub
         perform_get('search', params: options)
       end
 
-      def product(uuid)
-        perform_get("Products('#{uuid}')")
+      # /Product('ID')
+      def get_product(id, options = {})
+        perform_get("Products('#{id}')", params: options)
       end
     end
   end
