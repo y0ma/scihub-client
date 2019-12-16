@@ -27,7 +27,7 @@ module SciHub
 
       # /Product('ID')
       def get_product(id, options = {})
-        perform_get("Products('#{id}')", params: options)
+        perform_get("odata/v1/Products('#{id}')", params: options)
       end
     end
   end
