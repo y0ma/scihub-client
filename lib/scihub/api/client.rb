@@ -24,6 +24,10 @@ module SciHub
 
         perform_get('search', params: options)
       end
+
+      def product(uuid)
+        perform_get("Products('#{uuid}')")
+      end
     end
   end
 end
